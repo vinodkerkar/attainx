@@ -1,0 +1,203 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* ----------------------------------------------------- */
+/* BOOTSTRAP UI ELEMENTS
+/* All styles that override bootstrap elements
+/* ----------------------------------------------------- */
+/* button */
+.btn {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn:active, .btn.active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #406da4;
+  border-color: #3c6699;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active,
+.btn-primary .open > .dropdown-toggle.btn-primary {
+  background-color: #3c6699;
+  border-color: #355987;
+}
+
+.main-features{
+   padding: 40px 0;
+   margin-bottom: 60px;
+   text-align: center;
+   background-color: #5782b7;
+   color: #94b6df;
+ }
+ .main-features i {
+    font-size: 5em;
+    margin-bottom: 28px;
+}
+.feature-heading {
+    margin: 0;
+    color: #94b6df;
+    font-weight: 300;
+    font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+  .main-features div[class^="col-"] {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .main-features div[class^="col-"]:after {
+    display: none;
+  }
+}
+
+/* call to action */
+.call-to-action {
+  background-color: #ebebeb;
+  padding: 25px 0;
+  margin-bottom: 0;
+}
+.call-to-action .section-heading {
+  margin: 0;
+  font-size: 36px;
+  line-height: 45px;
+}
+.call-to-action .section-heading:after {
+  display: none;
+}
+.call-to-action span {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .call-to-action {
+    text-align: center;
+  }
+  .call-to-action .pull-left, .call-to-action .pull-right {
+    width: 100%;
+    float: none !important;
+  }
+  .call-to-action .btn {
+    margin-top: 10px;
+  }
+  .call-to-action span {
+    top: 7px;
+  }
+}
+
+/* social connect icons */
+ul.social-icons li a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+ul.social-icons li a.facebook-bg:hover, ul.social-icons li a.facebook-bg:focus {
+  background-color: #344f98;
+}
+ul.social-icons li a.twitter-bg:hover, ul.social-icons li a.twitter-bg:focus {
+  background-color: #138bee;
+}
+ul.social-icons li a.googleplus-bg:hover, ul.social-icons li a.googleplus-bg:focus {
+  background-color: #d73925;
+}
+ul.social-icons li a.rss-bg:hover, ul.social-icons li a.rss-bg:focus {
+  background-color: #e65c00;
+}
+ul.social-icons li a i {
+  position: relative;
+  top: 8px;
+}
+/* social background color */
+.facebook-bg {
+  background-color: #3b59ab;
+}
+
+.twitter-bg {
+  background-color: #2b97f0;
+}
+
+.googleplus-bg {
+  background-color: #dd4b39;
+}
+
+.rss-bg {
+  background-color: #ff6600;
+}
+/* footer */
+footer {
+  background-color: #49494b;
+  font-weight: 300;
+  color: #eaeaea;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover, footer a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+footer .social-icons.light-icons a {
+  background-color: #3c3c3e;
+}
+footer .social-icons.light-icons a:hover {
+  background-color: #353536 !important;
+}
+@media screen and (max-width: 768px) {
+  footer .container {
+    padding: 30px 15px;
+  }
+}
+
+.footer-heading {
+  margin: 0 0 13px 0;
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+}
+
+.footer-nav > li {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  padding: 15px 0;
+  background-color: #323232;
+  font-size: 12px;
+}
+
+.footer-minimal .copyright {
+  border: none !important;
+  font-size: 11px;
+  padding-bottom: 0;
+  background-color: transparent;
+}
