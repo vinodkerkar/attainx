@@ -3587,6 +3587,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .navbar .dropdown-menu > .dropdown:hover > .dropdown-menu {
     display: block;
   }
+  .nav > li > a {
+  padding: 15px 11px;
+}
 }
 
 .navbar-collapse {
@@ -3596,7 +3599,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .navbar-brand {
-  padding: 12px 15px;
+  padding: 6px 15px;
 }
 .navbar-brand > img {
   width: 100px;
