@@ -3588,7 +3588,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: block;
   }
   .nav > li > a {
-  padding: 15px 11px;
+  padding: 28px 8px;
 }
 }
 
@@ -3599,10 +3599,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .navbar-brand {
-  padding: 6px 15px;
+  padding: 6px 0px;
+  height:76px;
 }
 .navbar-brand > img {
-  width: 100px;
+  width: 150px;
 }
 .navbar-brand.navbar-logo-bigger {
   padding: 0 0 0 10px;
