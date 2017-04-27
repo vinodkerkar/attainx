@@ -127,6 +127,12 @@ hr {
   margin: 20px 0;
   font-size: 24px;
 }
+.slick-slider .slick-arrow {
+    top:50%;
+}
+  .slick-slider .slick-prev {
+    left:0px;
+}
 @media screen and (max-width: 768px) {
   .page-header .breadcrumb,
   .page-header .page-title {
@@ -3582,9 +3588,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @media screen and (min-width: 992px) {
   .navbar .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  .navbar .dropdown-menu > .dropdown:hover > .dropdown-menu {
     display: block;
   }
   .nav > li > a {
