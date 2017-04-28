@@ -127,12 +127,12 @@ hr {
   margin: 20px 0;
   font-size: 24px;
 }
-.slick-slider .slick-arrow {
+/*.slick-slider .slick-arrow {
     top:50%;
 }
   .slick-slider .slick-prev {
     left:0px;
-}
+}*/
 @media screen and (max-width: 768px) {
   .page-header .breadcrumb,
   .page-header .page-title {
@@ -7164,4 +7164,9 @@ ul.nav-categories > li > a:hover {
     float: none;
     width: 100%;
   }
+}
+/* new styles */
+.navbar-nav .dropdown-menu li a:hover {
+  background-color: #6A737E;
+  background-image:none;
 }
