@@ -4194,9 +4194,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .hero-unit-slider .carousel-inner > .item > img {
     max-width: inherit;
   }
-  .hero-unit-slider.slider-responsive .slick-dots {
+  /*.hero-unit-slider.slider-responsive .slick-dots {
     display: none !important;
-  }
+  }*/
   .hero-unit-slider.slider-responsive .carousel-caption {
     top: 2em;
   }
@@ -4217,9 +4217,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .hero-unit-slider .hero-button {
     font-size: 13px;
   }
-  .hero-unit-slider.slider-responsive .slick-dots {
+  /*.hero-unit-slider.slider-responsive .slick-dots {
     display: none !important;
-  }
+  }*/
   .hero-unit-slider.slider-responsive .carousel-caption {
     top: 0;
   }
@@ -4232,7 +4232,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .hero-unit-slider.slider-responsive .slick-slide img {
     max-width: 200%;
     position: relative;
-    right: 50%;
   }
   .hero-unit-slider.slider-responsive .hero-heading {
     font-size: 24px;
@@ -7169,4 +7168,13 @@ ul.nav-categories > li > a:hover {
 .navbar-nav .dropdown-menu li a:hover {
   background-color: #6A737E;
   background-image:none;
+}
+.certifications img.img-responsive,.clients img {
+  display:inline-block;
+}
+.certifications .slick-slide, .clients .slick-slide {
+  text-align:center;
+}
+h2.certifications-heading, h2.clients-heading {
+  text-align:center;
 }
