@@ -7196,3 +7196,7 @@ h2.certifications-heading, h2.clients-heading {
     box-shadow: none;
     border: 0;
 }
+.sidebar-map > div {
+    height: 260px;
+    overflow:hidden;
+}

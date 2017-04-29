@@ -29,4 +29,5 @@ var slickHeroImage = {
  $('.heroImage').slick(slickHeroImage);
  $('.certifications').slick(slickCertifications);
  $('.clients').slick(slickCertifications);
+ 
 });
