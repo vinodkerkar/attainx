@@ -9,8 +9,8 @@ var slickHeroImage = {
  };
  var slickCertifications = {
    dots: true,
-   slidesToShow: 3,
-   slidesToScroll: 3,
+   slidesToShow: 4,
+   slidesToScroll: 4,
    infinite: true,
    autoplay:true,
    autoplaySpeed:3000,
@@ -29,5 +29,5 @@ var slickHeroImage = {
  $('.heroImage').slick(slickHeroImage);
  $('.certifications').slick(slickCertifications);
  $('.clients').slick(slickCertifications);
- 
+
 });
