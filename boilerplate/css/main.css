@@ -7200,3 +7200,6 @@ h2.certifications-heading, h2.clients-heading {
     height: 260px;
     overflow:hidden;
 }
+.advisoryBoard img {
+  border-radius:50%;
+}
