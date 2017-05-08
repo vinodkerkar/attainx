@@ -1,11 +1,13 @@
 
 $(document).ready(function(){
 var slickHeroImage = {
-        dots: true,
-        infinite: true,
-        autoplay:true,
-        autoplaySpeed:3000,
-        arrows:false
+  speed: 800,
+dots: true,
+fade: true,
+autoplay: true,
+autoplaySpeed: 2500,
+prevArrow: '<button type="button" data-role="none" class="carousel-control left slick-prev">Previous</button>',
+nextArrow: '<button type="button" data-role="none" class="carousel-control right slick-next">Next</button>',
  };
  var slickCertifications = {
    dots: true,
