@@ -31,5 +31,8 @@ nextArrow: '<button type="button" data-role="none" class="carousel-control right
  $('.heroImage').slick(slickHeroImage);
  $('.certifications').slick(slickCertifications);
  $('.clients').slick(slickCertifications);
- 
+
+
 });
+//Includes
+$('#footer').load("include/footer.html");
