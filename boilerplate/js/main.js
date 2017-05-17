@@ -1,5 +1,4 @@
-
-$(document).ready(function(){
+function sliderFunction(){
 var slickHeroImage = {
   speed: 800,
 dots: true,
@@ -27,15 +26,16 @@ nextArrow: '<button type="button" data-role="none" class="carousel-control right
 	    }
      ]
  };
-
  $('.heroImage').slick(slickHeroImage);
  $('.certifications').slick(slickCertifications);
  $('.clients').slick(slickCertifications);
-
-
-});
-//Includes
-$('#navBar').load("include/header.html");
-$('#certifications').load("include/certifications.html");
-$('#ourClients').load("include/ourClients.html");
-$('#footer').load("include/footer.html");
+}
+(function () {
+    //Includes
+    $('#navBar').load("include/header.html");
+    $('#certifications').load("include/certifications.html");
+    $('#ourClients').load("include/ourClients.html");
+    $('#footer').load("include/footer.html");
+    // set time out function in order to get content first before to apply slick slider
+    setTimeout(sliderFunction, 300);
+})();
