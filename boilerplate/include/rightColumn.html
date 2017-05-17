@@ -19,22 +19,3 @@
         <li><strong>Saturday & Sunday: </strong> Closed</li>
     </ul>
 </div>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
- <script>
-    function initMap() {
-    var latLng = new google.maps.LatLng(37.415116,-79.144288),
-        myOptions = {
-            zoom: 8,
-            center: latLng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        },
-        map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
-        markerA = new google.maps.Marker({
-            position: latLng,
-            title: "Attainx Office",
-            map: map
-        });
-}
-
-initMap();
- </script>
