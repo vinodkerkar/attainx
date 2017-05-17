@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -26,10 +26,10 @@
                   <!-- HERO UNIT -->
 		<div class="page-header">
 			<div class="container">
-				<h1 class="page-title pull-left">Contract Vehicles</h1>
+				<h1 class="page-title pull-left">Get in touch with us</h1>
 				<ol class="breadcrumb">
-					<li><a href="Users/savroop%20singh/attainx/boilerplate/index.html">Home</a></li>
-					<li class="active">Contract Vehicles</li>
+					<li><a href="/Users/savroop%20singh/attainx/boilerplate/index.html">Home</a></li>
+					<li class="active">Contact Us</li>
 				</ol>
 			</div>
 		</div>
@@ -39,14 +39,47 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-					    <div class="featured-image">
-					        <a href="#"><img src="img/adobe-stock/big-data-main-87909563.jpg" class="img-responsive" alt="featured-image" /></a>
-					    </div>
-						<p>Our Agile teamsproduce virtually flawless code quickly and cost-effectivelyby blending Extreme Programming (XP), Scrum, and Lean practices, and also provide greater ability to deliver a solution which matches what the client needs in a shorter amount of time
-						Agile methodologies have shown improved customer satisfaction as it delivers higher quality products in less time.</p><p>
-						Agile helps to overcome the problems occurred in waterfall methodologies.
-						Agile offers more flexibility, adaptability, cost effectiveness and ensures that requirements are molded around the customers’ needs and that changes are identified early and incorporated when they are least expensive.
-						</p>
+						<p>Competently extend highly efficient initiatives whereas collaborative alignments. Collaboratively seize impactful opportunities and focused bandwidth. Continually expedite adaptive manufactured products and customer directed intellectual capital. Completely restore intermandated mindshare after multimedia based ideas. Credibly initiate distinctive metrics.</p>
+						<p>Authoritatively embrace performance based information before highly efficient solutions. Globally disintermediate ubiquitous "outside the box" thinking without client-based schemas. Credibly parallel task dynamic technologies and cross-platform total linkage. Authoritatively unleash emerging growth strategies whereas future-proof resources. Distinctively transition 24/7 partnerships without effective testing procedures. Distinctively underwhelm proactive intellectual capital rather than best-of-breed total linkage. Uniquely whiteboard distinctive methods of empowerment after.</p>
+						<br>
+						<!-- CONCTACT FORM -->
+						<div class="contact-form-wrapper">
+							<form id="contact-form" method="post" class="form-horizontal margin-bottom-30px" role="form" novalidate>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="contact-name" class="control-label sr-only">Name</label>
+											<input type="text" class="form-control" id="contact-name" name="name" placeholder="Name*" required>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="contact-email" class="control-label sr-only">Email</label>
+											<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email*" required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contact-subject" class="control-label sr-only">Subject</label>
+									<div class="col-sm-12">
+										<input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contact-message" class="control-label sr-only">Message</label>
+									<div class="col-sm-12">
+										<textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Message*" required></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<button id="submit-button" type="submit" class="btn btn-primary"><i class="fa loading-icon"></i> <span>Submit Message</span></button>
+									</div>
+								</div>
+								<input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
+							</form>
+						</div>
+						<!-- END CONCTACT FORM -->
 					</div>
 					<div class="col-md-3">
 						<!-- RIGHT SIDEBAR CONTENT -->
@@ -76,13 +109,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- LATEST CERTIFICAITON -->
-		<section id="certifications">
-			
-		</section>
-		<!-- END LATEST CERTIFICAITON -->
 		<div id="footer"></div>
- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4gqZHCYv24tj1_YLv4eNd6C_omyecZQ&callback=initMap" type="text/javascript"></script>
+ <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.8/src/markerwithlabel.js"></script>
+
  <script>
  	function initMap() {
     var latLng = new google.maps.LatLng(37.415116,-79.144288),

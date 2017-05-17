@@ -35,4 +35,7 @@ nextArrow: '<button type="button" data-role="none" class="carousel-control right
 
 });
 //Includes
+$('#navBar').load("include/header.html");
+$('#certifications').load("include/certifications.html");
+$('#ourClients').load("include/ourClients.html");
 $('#footer').load("include/footer.html");
