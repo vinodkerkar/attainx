@@ -1,0 +1,40 @@
+<div class="widget">
+    <h3 class="widget-title">CONTACT INFO</h3>
+    <ul class="contact-info fa-ul">
+        <li><i class="fa fa-li fa-building-o"></i> 725 Church Street,Suite 505 Lynchburg,VA 24504 USA</li>
+        <li><i class="fa fa-li fa-phone"></i> +202-400-2259</li>
+        <li><i class="fa fa-li fa-envelope-o"></i> <a href="mailto:operations@attainx.com">operations@attainx.com</a></li>
+    </ul>
+</div>
+<div class="widget">
+    <h3 class="widget-title">GETTING THERE</h3>
+    <div class="google-map sidebar-map">
+        <div id="map-canvas"></div>
+    </div>
+</div>
+<div class="widget">
+    <h3 class="widget-title">BUSINESS HOURS</h3>
+    <ul class="list-unstyled">
+        <li><strong>Monday-Friday: </strong> 8am to 5pm</li>
+        <li><strong>Saturday & Sunday: </strong> Closed</li>
+    </ul>
+</div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ <script>
+    function initMap() {
+    var latLng = new google.maps.LatLng(37.415116,-79.144288),
+        myOptions = {
+            zoom: 8,
+            center: latLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
+        markerA = new google.maps.Marker({
+            position: latLng,
+            title: "Attainx Office",
+            map: map
+        });
+}
+
+initMap();
+ </script>
