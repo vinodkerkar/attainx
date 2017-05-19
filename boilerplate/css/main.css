@@ -7216,3 +7216,15 @@ ul.clients-block li {
     border-radius: 5px;
     box-shadow: 0 0 8px 0px #ccc;
 }
+ .contractVehicles div, .certification div {
+    float: left;
+    min-width: 180px;
+    min-height: 110px;
+    margin: 20px 40px 15px 0;
+    vertical-align: bottom;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0px #ccc;
+ }
