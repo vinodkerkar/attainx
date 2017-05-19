@@ -39,4 +39,27 @@
                  $('.certifications').slick(slickCertifications);
                  $('.clients').slick(slickCertifications);
       }
+       /* Scroll to section with id specified*/
+                        $.fn.scrollView = function() {
+                            return this.each(function() {
+                              var targetOffset = $(this).offset().top;
+                                $('html, body').animate({
+                                  
+                                    scrollTop: targetOffset
+                                }, 1000);
+                            });
+                        };
+                        /* Scroll to the Accesibility section and keeping the Drawer open*/
+                        var goal = window.location.hash;
+                        if (goal == "#ourGoal") {
+                            $('.ourGoal').scrollView();
+                        }
+                        var team = window.location.hash;
+                        if (team == "#ourTeam") {
+                            $('.ourTeam').scrollView();
+                        }
+                        var flexible = window.location.hash;
+                        if (flexible == "#flexibility") {
+                            $('.flexibility').scrollView();
+                        }
 })();
