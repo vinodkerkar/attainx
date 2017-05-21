@@ -5771,6 +5771,7 @@ ul.sidebar-nav ul.submenu li:first-child a {
 }
 .number-info.horizontal p {
   padding-left: 40px;
+  padding-top: 7px;
   line-height: 1;
   text-align: left;
 }

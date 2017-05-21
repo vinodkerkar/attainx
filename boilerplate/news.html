@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -26,38 +26,57 @@
                   <!-- HERO UNIT -->
 		<div class="page-header">
 			<div class="container">
-				<h1 class="page-title pull-left">Careers</h1>
+				<h1 class="page-title pull-left">News</h1>
 				<ol class="breadcrumb">
 					<li><a href="index.html">Home</a></li>
-					<li class="active">Careers</li>
+					<li class="active">News</li>
 				</ol>
 			</div>
 		</div>
 		<!-- END BREADCRUMBS -->
+		<!-- PAGE CONTENT -->
 		<div class="page-content">
-            <div class="container">
-              <div class="row">
-      					<div class="col-md-9">
-                  <div class="featured-image">
-    					        <a href="#"><img src="img/adobe-stock/career-main-75954765.jpg" class="img-responsive" alt="featured-image" /></a>
-    					    </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<ul>
+              <li>SBA Certified Attainx as Hubzone</li>
+              <li>Virginia State certified Attainx as a SWAM Certified vendor.</li>
+              <li>February 2016 – Attainx Certified ISO 9001-2008</li>
+              <li>February 2017 -  Attainx recertified for ISO- 9001: 2008</li>
+              <li>March 2017 -   Attainx protot for the Big data, appreciated by financial clients, new development needs have been provided.</li>
+              <li>May 2017 – CMMI Level 3 appraisal in progress.</li>
+            </ul>
+					</div>
+					<div class="col-md-3" id="rightColumn">
+						<!-- RIGHT SIDEBAR CONTENT -->
 
-                  <p>
-                    Please send your resume to <a href="mailto:hr@attainx.com">hr@attainx.com</a>
-                  </p>
-      						<br>
+						<!-- END RIGHT SIDEBAR CONTENT -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuduETpogRjq2c2P-hTTGjiCSE6Qy3k3Q&callback=initMap" type="text/javascript"></script>
 
-      					</div>
-      					<div class="col-md-3" id="rightColumn">
-      						<!-- RIGHT SIDEBAR CONTENT -->
+ <script>
+ 	function initMap() {
+    var latLng = new google.maps.LatLng(37.415116,-79.144288),
+        myOptions = {
+            zoom: 8,
+            center: latLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(document.getElementById('map-canvas'), myOptions),
+        markerA = new google.maps.Marker({
+            position: latLng,
+            title: "Attainx Office",
+            map: map
+        });
+}
 
-      						<!-- END RIGHT SIDEBAR CONTENT -->
-      					</div>
-      				</div>
-            </div>
-        </div>
-		    <div id="footer"></div>
-
+initMap();
+ </script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/slick.min.js"></script>
