@@ -44,46 +44,130 @@
 						<br>
 						<!-- CONCTACT FORM -->
 						<div class="contact-form-wrapper">
-							<form id="contact-form" method="post" class="form-horizontal margin-bottom-30px" role="form" novalidate>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label for="contact-name" class="control-label sr-only">Name</label>
-											<input type="text" class="form-control" id="contact-name" name="name" placeholder="Name*" required>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<label for="contact-email" class="control-label sr-only">Email</label>
-											<input type="email" class="form-control" id="contact-email" name="email" placeholder="Email*" required>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact-subject" class="control-label sr-only">Subject</label>
-									<div class="col-sm-12">
-										<input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="contact-message" class="control-label sr-only">Message</label>
-									<div class="col-sm-12">
-										<textarea class="form-control" id="contact-message" name="message" rows="5" cols="30" placeholder="Message*" required></textarea>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-12">
-										<button id="submit-button" type="submit" class="btn btn-primary"><i class="fa loading-icon"></i> <span>Submit Message</span></button>
-									</div>
-								</div>
-								<input type="hidden" name="msg-submitted" id="msg-submitted" value="true">
-							</form>
+              <?php
+    if (!empty($_POST['form_one'])) {
+
+
+    $name = $_POST['name']; // required
+    $email = $_POST['email']; // required
+    $phone = $_POST['phone']; // not required
+    $query = $_POST['query']; // required
+    $email_from = $_POST['email']; // required
+
+
+
+      // EDIT THE BELOW TWO LINES AS REQUIRED
+      $email_to = "operations@attainx.com";
+      $email_subject = 'Client Enquiry from ' .$name;
+
+      $headers = "From: info@attainx.com \r\n".
+
+      'Reply-To: '.$email."\r\n" .
+
+      'X-Mailer: PHP/' . phpversion();
+
+
+        $email_message = "Form details below.\n\n";
+
+
+
+          function clean_string($string) {
+
+            $bad = array("content-type","bcc:","to:","cc:","href");
+
+            return str_replace($bad,"",$string);
+
+          }
+
+
+
+
+      $email_message .= "Name: ".clean_string($name)."\n\n";
+      $email_message .= "Email: ".clean_string($email)."\n\n";
+      $email_message .= "Phone: ".clean_string($phone)."\n\n";
+      $email_message .= "Query: ".clean_string($query)."\n\n";
+
+      // create email headers
+
+
+
+      $headers1 = "From: info@attainx.com \r\n".
+
+      'Reply-To: info@attainx.com'."\r\n" .
+
+      'X-Mailer: PHP/' . phpversion();
+
+      /* Prepare autoresponder subject */
+
+      $respond_subject1 = "Thank you for contacting us!";
+
+      /* Prepare autoresponder message */
+
+      $respond_message1 = "Dear " .$name.", ".
+
+      "
+
+      Thank you for your enquiry
+
+      One of our team member will respond to you as soon as possible.
+
+      For more info about AttainX, please visit http://www.attainx.com
+
+
+      Kind Regards,
+      Support Team
+      AttainX
+
+
+      ";
+      /* Send the response message using mail() function */
+
+
+      mail($email_from, $respond_subject1, $respond_message1, $headers1);
+
+      /* Send the message using mail() function */
+
+      @mail($email_to, $email_subject, $email_message, $headers);
+
+       //Email response
+       echo "Thank you for contacting us! ";
+
+       echo "<br/> <a href='contactUs.php' class='back-button'> Go Back </a>";
+
+       }
+
+      //redirect to the 'thank you' page
+
+       else  {
+      ?>
+
+
+      <form method="post" id="form-1" enctype="application/x-www-form-urlencoded" action="">
+
+
+      <input type="text" id="Name" name="name" placeholder="Name *" maxlength="40" value="" autocomplete="off" onkeypress="return ValidateAlpha(event);" required="required" class="form-control" style="float:left;">
+       <div class="clear">&nbsp; </div>
+      <input type="email" id="EmailAddress" placeholder="Email Address *" name="email" maxlength="40" value="" autocomplete="off" required="required" class="form-control" style="float:left;" autocomplete='off' required='required' >
+       <div class="clear">&nbsp; </div>
+      <input pattern="[0-9]{10,}" placeholder="Phone *" maxlength="15" title="Minmimum 10 numbers." id="Phone" name="phone" value="" autocomplete="off" required="required" class="form-control"  >
+      <div class="clear">&nbsp; </div>
+      <textarea  placeholder="Message *" name="query" maxlength="400" cols="25" rows="6" required="required"></textarea><br/>
+
+      <br>
+       <input type="submit" name="form_one" value="Submit" class="btn btn-primary"/></center>
+      <br>
+
+      </form>
+
+      <?php
+       }
+      ?>
 						</div>
 						<!-- END CONCTACT FORM -->
 					</div>
 					<div class="col-md-3">
 					<!-- RIGHT SIDEBAR CONTENT -->
-					  <div id="rightColumn"></div>	
+					  <div id="rightColumn"></div>
 					  <div class="widget">
 					    <h3 class="widget-title">GETTING THERE</h3>
 					    <div class="google-map sidebar-map">
@@ -96,7 +180,7 @@
 			</div>
 		</div>
 		<div id="footer"></div>
-    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCuduETpogRjq2c2P-hTTGjiCSE6Qy3k3Q&callback=initMap" type="text/javascript"></script>
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyCuduETpogRjq2c2P-hTTGjiCSE6Qy3k3Q&callback=initMap" type="text/javascript"></script>
 
  <script>
  	function initMap() {
