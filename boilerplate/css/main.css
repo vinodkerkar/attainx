@@ -5075,9 +5075,6 @@ div[class*="col-"] > .form-group {
   font-size: 22px;
   font-weight: 700;
 }
-.boxed-content.left-aligned {
-  text-align: left;
-}
 .boxed-content.left-aligned .boxed-content-title {
   margin-bottom: 10px;
   line-height: 28px;
@@ -7166,6 +7163,9 @@ ul.nav-categories > li > a:hover {
   }
 }
 /* new styles */
+div.text-justify {
+  text-align: justify;
+}
 .navbar-nav .dropdown-menu li a:hover {
   background-color: #6A737E;
   background-image:none;
