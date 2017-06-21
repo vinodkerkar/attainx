@@ -3607,7 +3607,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height:76px;
 }
 .navbar-brand > img {
-  width: 150px;
+  width: 162px;
 }
 .navbar-brand.navbar-logo-bigger {
   padding: 0 0 0 10px;
@@ -7039,6 +7039,7 @@ ul.nav-categories > li > a:hover {
 }
 .contact-info > li {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .sidebar-map > div {
@@ -7170,6 +7171,12 @@ div.text-justify {
 .navbar-nav .dropdown-menu li a:hover {
   background-color: #6A737E;
   background-image:none;
+}
+.certifications span{
+  display: block;
+font-weight: 300;
+line-height: 1.3;
+margin-bottom: 0;
 }
 .certifications img.img-responsive,.clients img {
   display:inline-block;
