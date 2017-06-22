@@ -64,8 +64,42 @@
                   if (flexible == "#flexibility") {
                       $('.flexibility').scrollView();
                   }
-                 // get the width of the textarea minus scrollbar
-                  var textareaWidth = $('.news-innerContainer')[0].scrollWidth;
-                  // width of our wrapper equals width of the inner part of the textarea
-                  $('.news-outerContainer').css({'width':textareaWidth +'px'});                        
+
 })();
+
+var interval=1000;
+var stepsize=78;
+var scrollspeed="normal";
+var objInterval=null;
+
+$(document).ready( 
+  function(){
+  $("#bottom").html($("#top").html());
+
+  $("#content").bind("mouseover",function(){StopScroll();});
+  $("#content").bind("mouseout",function(){StartScroll();});
+   
+  StartScroll();  
+});
+
+  function StartScroll(){
+   objInterval=setInterval("verticalloop()",interval);
+  }
+   
+  function StopScroll(){
+   window.clearInterval(objInterval);
+  } 
+
+function verticalloop(){
+
+  if($("#content").scrollTop()>=$("#top").outerHeight()){
+        $("#content").scrollTop($("#content").scrollTop()-$("#top").outerHeight());
+  }
+
+  $("#content").animate({
+         "scrollTop" : $("#content").scrollTop()+stepsize +"px"},
+          scrollspeed
+  );
+}
+
+
