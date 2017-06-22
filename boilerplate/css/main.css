@@ -7237,3 +7237,39 @@ ul.clients-block li {
     border-radius: 5px;
     box-shadow: 0 0 8px 0px #ccc;
  }
+ section.slider-responsive {
+    position:relative;
+ }
+ .news-outerContainer {
+    position: absolute;
+    top: 80px;
+    right: 70px;
+    color: white;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+ }
+ .news-innerContainer {
+    height: 300px;
+    width: 300px;
+    overflow-y: scroll;
+    padding:0;
+ }
+ .news-innerContainer li {
+ margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+  }
+ .news-innerContainer li::before{
+  content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+  }
+
