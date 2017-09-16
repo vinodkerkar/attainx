@@ -5,8 +5,7 @@
       $('#ourClients').load("include/ourClients.html");
       $('#footer').load("include/footer.html");
       $('#rightColumn').load("include/rightColumn.html");
-      
-      // set time out function in order to get content first before to apply slick slider
+    // set time out function in order to get content first before to apply slick slider
       setTimeout(sliderFunction, 300);
       function sliderFunction(){
                 var slickHeroImage = {
@@ -67,7 +66,7 @@
 
 })();
 
-var interval=1000;
+var interval=2000;
 var stepsize=78;
 var scrollspeed="normal";
 var objInterval=null;
